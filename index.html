@@ -1,0 +1,2983 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!--main css-->
+    <link rel="sylesheet" href="./css/style.css">
+     
+    <title>MyMusic</title>
+    <!--bootsrap css-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    
+    <!--font awesome-->
+    <script src="./js/all.js"></script>
+
+    <Style>
+
+        body{
+            
+        }
+        /*HEADER*/
+        header{
+            width: 100%;
+            background: linear-gradient(-45deg, #f3377f, #22A);
+            height: 80px;
+            padding-top: 20px;
+            z-index: 4;
+            position: fixed;
+            
+            
+        }
+
+        .navbar{
+            width: 80%;
+            margin: auto;
+            
+           
+        }
+
+        
+        
+
+       
+
+        
+        /*END OF HEADER*/
+
+
+         /*FIRST SECTION*/
+        .first-section{
+         background: linear-gradient(-45deg, #f3377f, #22A);
+         height: 100vh;
+          
+       
+          
+        }
+        
+
+
+        section h1{
+            font-size: 120px;
+            font-weight:700;
+        }
+
+        section .section-items{
+            width: 60%;
+            margin: auto;
+            padding-top: 40vh;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 3;
+            
+        }
+
+        .section-items p{
+            letter-spacing: 5px;
+        }
+
+        .first-inner-section{
+            height: 100vh;
+            background: url("./img/Music_files/about-img.png" );
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        
+        /* END OF FIRST SECTION*/
+        
+
+
+        /*SECOND SECTION */
+        .second-section .first-row{
+            width: 80%;
+            padding-top: 7rem;
+            color: rgb(160, 157, 157);
+            margin: auto;
+
+        }
+
+        .second-section .first-row .first-item{
+            width: 90%;
+            margin: auto;
+            font-size: 2rem;
+            text-align: center;
+            opacity: 0.7;
+            line-height: 35px;
+            padding-bottom: 15px;
+        }
+
+        .second-section .first-row .first-item b{
+            color: #000;
+            font-weight: 500;
+           
+        }
+        
+        .second-section .first-row .first-item p{
+            color: rgba(0, 0, 0, 0.8);
+            font-weight: 100;
+        }
+
+        .second-section .first-row .second-item{
+            line-height: 1.4rem;
+            text-align: center;
+        }
+        
+       
+
+        .second-section .second-row{
+            width: 80%;
+            margin: auto;
+            margin-top: 6rem;
+        }
+
+        .second-section .second-row img{
+            width: 100%;
+            height: 87vh;
+            margin: auto;
+            position: relative;
+            transition: 1s;
+        }
+
+        .second-section .second-row.hover-back{
+            transition: 1s;
+        }
+        .hover-back:hover::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(-45deg, #f3377f, #22A);
+            opacity: 0.7;
+            
+        }
+
+
+        .second-section .second-row .second-row-text{
+            position: absolute;
+            top: 70%;
+            z-index: 1;
+            text-align: center;
+            width: 100%;
+            color: #fff;
+            margin: none;
+            padding: none;
+            transition: 1s;
+            opacity: 0;
+            
+        }
+
+         .hover-back:hover .second-row-text{
+             opacity: 2;
+         }
+
+
+
+
+        .second-section .second-row .s-row-text{
+            text-transform: uppercase;
+            font-size: 20px;
+        }
+
+        .second-section .second-row .ss-row-text{
+            font-weight: 400;
+        }
+
+        .second-section .third-row{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 6rem;
+            position: relative;
+            
+        }
+        
+        .second-section .third-row img{
+            width: 100%;
+        }
+
+        
+        .second-section .third-row .third-row-inner{
+            position: absolute;
+            top: 40%;
+            width: 100%;
+            z-index: 2;
+            
+        }
+
+        .third-row-items:hover::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(-45deg, #f3377f, #22A);
+            opacity: 0.7;
+            transition: 2s;
+        }
+
+        .second-section .third-row .third-row-inner img{
+            margin-left: 45%;
+            width: 50px;
+            height: 50px;
+            opacity: 0;
+        }
+        
+        .second-section .third-row-items:hover img{
+            opacity: 2;
+            transition: 1s;
+            
+        }
+
+        .second-section .third-row .third-row-inner-text{
+            margin: auto;
+            color: #fff;
+            text-align: center;
+            padding-top: 50px;
+            opacity: 0;
+            
+        }
+
+        .second-section .third-row-items:hover .third-row-inner-text{
+            opacity: 2;
+            transition: 1s;
+        }
+
+        .second-section .third-row .t-row-text{
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 20px;
+        }
+
+        /*END OF SECOND SECTION*/
+
+
+        /*SERVICES SECTION*/
+
+        .services-section{
+           background-image: url(./img/Music_files/service-bg.jpg);
+           background-position: center;
+           background-repeat: no-repeat;
+           background-size: cover;
+           background-attachment: fixed;
+           height: 70vh;
+        }
+
+        .services-section .services-container{
+            width: 40%;
+            margin-left: 12rem;
+            padding-top: 7rem;
+            
+        }
+
+
+        .services-section .services-container .spacing{
+            margin-bottom: 30px;
+        }
+
+        .services-section .services-container .services-items img{
+            margin-right: 5px;
+        }
+
+        .services-section .services-container .services-items b{
+            display: block;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            color: #000;
+        }
+
+        .services-section .services-container .services-items p{
+            color: #aaa;
+        }
+
+        /*END OF SERVICES SECTION*/
+        
+        
+
+        /*AFTER SECTION*/
+        .after-section{
+            background: url(./img/pexels-andrea-piacquadio-3781538.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+            height: 75vh;
+            
+        }
+
+        .after-section::after{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            background: linear-gradient(-45deg, #f3377f, #22A);
+            opacity: 0.8;
+            
+           
+        }
+
+        .after-section-container{
+            width: 40%;
+            margin: auto;
+            padding-top: 7rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            
+        }
+
+        .after-section-text{
+            padding-left: 10px;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+
+        .after-section-text b{
+            display: block;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .after-section-paragraph{
+            width: 45%;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            line-height: 23px;
+            
+        }
+
+        .after-section .after-icons {
+            position: relative;
+            z-index: 2;
+            width: 40%;
+            padding: 40px 30px;
+            margin: auto;
+            margin-top: 40px;
+            justify-content: space-between;
+            color: #fff;
+        }
+         
+
+        .after-section .after-icons .main-icon{
+           padding: 8px 12px;
+           border: 1px solid #fff;
+           margin-top: -40px;
+        }
+
+
+        .after-section .after-icons .main-icon:hover{
+           color: black;
+           background: #fff;
+           cursor: pointer;
+           transition:  1s;
+        }
+        
+      
+        
+
+        /*END OF AFTER SECTION*/
+
+
+        /*ABOUT SECTION*/
+
+        .about-section{
+            background: black;
+            opacity: 0.9;
+        }
+       
+
+        .about-section .about-background{
+            height: 60vh;
+           background: url(./img/Music_files/about-img.png) center/cover no-repeat ;
+           width: 100%;
+            
+        }
+
+        
+
+        .about-section-items{
+            width: 100%;
+           
+            padding-top: 2.5rem;
+            margin: auto;
+        }
+
+        .first-about-item{
+            width: 55%;
+            margin: auto;
+            text-align: center;
+            font-size: 1.8rem;
+            padding-bottom: 20px;
+            line-height: 35px;
+            background: linear-gradient(-45deg, #f3377f, #22A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .second-about-item{
+            width: 90%;
+            margin: auto;
+            text-align: center;
+            padding-left: 20px;
+            font-size: 13px;
+            color: grey;
+            padding-bottom: 7rem;
+
+        }
+        /*END OF ABOUT SECTION*/
+
+        /*LAST SECTION*/
+
+        .last-section{
+            background: #eee;
+            margin-bottom: 40px;
+        }
+        
+
+        .last-section-container{
+            width: 90%;
+            margin: auto;
+            padding-top: 7rem;
+        }
+        
+        .last-section-text{
+            width: 35%;
+            display: block;
+            
+        }
+
+        .last-section-text p{
+            padding-top: 20px;
+            color: grey;
+            opacity: 0.7;
+        }
+
+        .last-section-container b{
+            
+            margin-left: 1rem;
+            font-size: 35px;
+            margin: auto;
+            text-align: center;
+            line-height: 35px;
+            text-transform: uppercase;
+            
+        }
+
+        .main-text{
+            text-align: center;
+        }
+        
+        .last-section .my-form{
+            width: 90%;
+            margin: auto;
+
+        }
+
+        .last-section .first-form-section{
+            width: 70%;
+            margin: auto;
+        }
+        
+        .last-section .first-form-section .my-input{ 
+           margin: auto;
+           width: 100%;
+          
+        }
+
+        
+        
+
+        .last-section  .big-message-box{
+            margin-left: 3%;
+            width: 80%;
+            margin: auto;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .last-section  button{
+            padding: 10px 3%;
+            margin-left: 66%;
+            margin-bottom: 7rem;
+        }
+
+        .last-section  button .my-icon{
+            padding-left: 2px;
+            
+        }
+
+        /*.first-form-section{
+            width: 700px;
+        }
+
+        .my-input{
+            padding-right: 100%;
+           
+        }
+
+        .big-message-box{
+            padding-right: 100%;
+            margin-left: none; 
+        }*/
+
+       
+        
+        /*END OF LAST SECTION*/
+        
+
+        /*FORM SECTION*/
+
+        .first-form-section{
+            display: block;
+            margin-right: 30px;
+        }
+
+       .first-form-section .my-input{
+           width: 350px;
+           padding-top: 10px;
+           padding-bottom: 10px;
+           
+       }
+
+       .big-message-box{
+           width: 350px;
+           height: 180px;
+       }
+       
+
+       .form-button{
+           margin-left: 12rem;
+           border-radius: 50px;
+           padding: 4px 15px;
+           background: linear-gradient(-45deg, #f5639b, #22A);
+           border: none;
+           color: white;
+           
+       }
+
+          /*END OF FORM SECTION*/
+
+
+            /*FOOTER */
+       .main-footer{
+           height: 7rem;
+       }
+
+       .main-footer .footer-container{
+           width: 90%;
+           height: 7rem;
+           justify-content: center;
+           align-items: center;
+           padding-top: 10px;
+       }
+
+       .second-footer-item {
+          width: 90%;
+          color: #aaa;
+          justify-content: flex-start;
+          
+       }
+
+       .second-footer-item i{
+           padding-right: 10px;
+       }
+
+       .footer-icons{
+           padding: 10px 15px;
+           background: #eee;
+           margin: 2px;  
+       }
+
+       .footer-icons:hover{
+        background: linear-gradient(-45deg, #f5639b, #22A);
+       }
+        
+           /*END OF FOOTER*/
+
+
+ /*=================================================================*/
+
+         /*MEDIA QUERIES*/
+        
+
+        
+          /*SCREEN SIZE OF 1400 AND BELOW*/
+          @media(max-width: 1400px){
+              
+              section h1{
+                  font-size: 120px;
+                  font-weight:700;
+              }
+      
+              section .section-items{
+                  width: 100%;
+                  margin: auto;
+                  padding-top: 35vh;
+                  text-align: center;
+                  justify-content: center;
+                  align-items: center;
+                  position: relative;
+                  z-index: 3;
+             /*--------------------------*/
+
+             
+            }
+        
+
+        
+          
+         
+
+       
+               }
+      
+                /*SCREEN SIZE OF 1400 AND BELOW*/
+             
+
+       /*SCREEN SIZE OF 1300 AND BELOW*/
+          @media(max-width: 1300px){
+
+        .services-section .services-container{
+            width: 45%;
+            margin-left: 6rem;
+            padding-top: 7rem;
+            
+        }
+
+   
+
+        
+          }
+          /*END SCREEN SIZE OF 1300 AND BELOW*/
+        
+ 
+           /*SCREEN SIZE OF 1200 AND BELOW*/
+         @media(max-width: 1200px){
+              
+        section h1{
+            font-size: 80px;
+            font-weight:700;
+        }
+
+        section .section-items{
+            width: 80%;
+            margin: auto;
+            padding-top: 30vh;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 3;
+            
+        }
+
+          /*--------------------------*/
+         
+         
+
+         }
+
+          /*SCREEN SIZE OF 1200 AND BELOW*/
+        
+
+        /*SCREEN SIZE OF 1100 AND BELOW*/
+         @media(max-width: 1100px){
+
+        
+
+         }
+
+          /*SCREEN SIZE OF 1100 AND BELOW*/
+
+
+          /*SCREEN SIZE OF 1000 AND BELOW*/
+         @media(max-width: 1000px){
+
+
+      
+
+        .services-section .services-container{
+            width: 85%;
+            margin-left: 6rem;
+            padding-top: 7rem;
+            
+        }
+
+        .services-section .services-container .services-items img{
+            margin-right: none;
+        }
+            
+           
+                
+       
+         }
+
+          /* END OF SCREEN SIZE OF 1000 AND BELOW*/
+
+
+             /*===========================================*/
+                             /*MIN-WIDTHS*/
+             /*===========================================*/
+
+        /*SCREEN SIZE OF 576 AND BELOW*/
+        @media(max-width: 576px){
+
+         .second-section .first-row{
+            width: 100%;
+            padding-top: 7rem;
+            color: rgb(160, 157, 157);
+            margin: auto;
+
+        }
+
+        .second-section .first-row .first-item{
+            width: 100%;
+            margin: auto;
+            font-size: 2rem;
+            text-align: center;
+            opacity: 0.7;
+            line-height: 35px;
+        }
+
+        
+
+        .second-section .first-row .second-item{
+           
+            margin: auto;
+            line-height: 1.4rem;
+            text-align: center;
+        }
+
+
+        
+        .second-section .second-row{
+            width: 100%;
+            margin-top: 6rem;
+
+        }
+
+        .second-section .second-row img{
+            width: 100%;
+            height: 87vh;
+            margin: auto;
+            position: relative;
+            transition: 1s;
+        }
+
+        .second-section .third-row{
+            width: 100%;
+            margin: auto;
+            margin-bottom: 6rem;
+            position: relative;
+            
+        }
+        
+        .second-section .third-row img{
+            width: 100%;
+            
+        }
+
+        .after-section-container{
+            width: 80%;
+            margin: auto;
+            padding-top: 7rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            
+        }
+
+        .after-section-text{
+            padding-left: 10px;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+
+        .after-section-text b{
+            display: block;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .after-section-paragraph{
+            width: 80%;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            line-height: 23px;
+            
+        }
+
+        .after-section .after-icons {
+            position: relative;
+            z-index: 2;
+            width: 60%;
+            padding: 40px 30px;
+            margin: auto;
+            margin-top: 40px;
+            justify-content: space-between;
+            color: #fff;
+        }
+         
+
+        .after-section .after-icons .main-icon{
+           padding: 8px 12px;
+           border: 1px solid #fff;
+           margin-top: -40px;
+        }
+
+
+        .after-section .after-icons .main-icon:hover{
+           color: black;
+           background: #fff;
+           cursor: pointer;
+           transition:  1s;
+        }
+        
+
+         .first-about-item{
+            width: 80%;
+            margin: auto;
+            text-align: center;
+            font-size: 1.5rem;
+            padding-left: 0px;
+            padding-bottom: 10px;
+            line-height: 35px;
+            background: linear-gradient(-45deg, #f3377f, #22A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .last-section-text{
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            display: block;
+            
+        }
+
+        
+
+        .last-section .first-form-section{
+            width: 95%;
+            margin: auto;
+        }
+        
+        .last-section .first-form-section .my-input{ 
+           margin: auto;
+           width: 100%;
+          
+        }
+
+        .last-section  .big-message-box{
+            margin-left: 3%;
+            width: 95%;
+            margin: auto;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .last-section  button{
+            padding: 10px 3%;
+            margin-left: 65%;
+            margin-bottom: 7rem;
+        }
+
+        .main-footer .footer-container{
+           width: 100%;
+           height: 7rem;
+           justify-content: center;
+           align-items: center;
+           padding-top: 10px;
+       }
+
+       .first-footer-item{
+           
+       }
+
+       .second-footer-item {
+          width: 100%;
+          color: #aaa;
+          justify-content: flex-start;
+        
+       }
+
+       .second-footer-item i{
+           padding-right: 10px;
+       }
+
+       .footer-icons{
+           padding: 10px 15px;
+           background: #eee;
+           
+       }
+
+       
+       .navbar{
+            width: 100%;
+            margin: auto;
+            
+           
+        }
+        }
+
+         /* END OF SCREEN SIZE OF 576 AND BELOW*/
+        
+
+        /*SCREEN SIZE OF 576 AND ABOVE*/
+        @media(min-width: 576px){
+            
+            
+        .navbar{
+            width: 90%;
+            margin: auto;
+            
+           
+        }
+            .second-section .second-row{
+            width: 90%;
+            margin: auto;
+            margin-top: 6rem;
+        }
+
+        .second-section .second-row img{
+            width: 100%;
+            height: 87vh;
+            margin: auto;
+            position: relative;
+            transition: 1s;
+        }
+
+        .second-section .third-row{
+            width: 90%;
+            margin: auto;
+            margin-bottom: 6rem;
+            position: relative;
+            
+        }
+        
+        .second-section .third-row img{
+            width: 100%;
+            
+        }
+
+
+        .after-section-container{
+            width: 60%;
+            margin: auto;
+            padding-top: 7rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            
+        }
+
+        .after-section-text{
+            padding-left: 10px;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+
+        .after-section-text b{
+            display: block;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .after-section-paragraph{
+            width: 70%;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            line-height: 23px;
+            
+        }
+
+        .after-section .after-icons {
+            position: relative;
+            z-index: 2;
+            width: 60%;
+            padding: 40px 30px;
+            margin: auto;
+            margin-top: 40px;
+            justify-content: space-between;
+            color: #fff;
+        }
+         
+
+        .after-section .after-icons .main-icon{
+           padding: 8px 12px;
+           border: 1px solid #fff;
+           margin-top: -40px;
+        }
+
+
+        .after-section .after-icons .main-icon:hover{
+           color: black;
+           background: #fff;
+           cursor: pointer;
+           transition:  1s;
+        }
+        
+        
+
+        .last-section-text{
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            display: block;
+            
+        }
+
+        .last-section .first-form-section{
+            width: 85%;
+            margin: auto;
+        }
+        
+        .last-section .first-form-section .my-input{ 
+           margin: auto;
+           width: 100%;
+          
+        }
+
+        .last-section  .big-message-box{
+            margin-left: 3%;
+            width: 85%;
+            margin: auto;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .last-section  button{
+            padding: 10px 3%;
+            margin-left: 60%;
+            margin-bottom: 7rem;
+        }
+
+        .main-footer .footer-container{
+           width: 90%;
+           height: 7rem;
+           justify-content: center;
+           align-items: center;
+           padding-top: 10px;
+       }
+
+       .first-footer-item{
+           width: 87%;
+       }
+
+       .second-footer-item {
+          width: 95%;
+          color: #aaa;
+          justify-content: flex-start;
+          
+       }
+
+       .second-footer-item i{
+           padding-right: 10px;
+       }
+
+       .footer-icons{
+           padding: 10px 15px;
+           background: #eee;
+           
+       }
+
+        }
+
+
+         /* END OF SCREEN SIZE OF 576 AND BELOW*/
+
+         /*SCREEN SIZE OF 650 AND ABOVE*/
+         @media(min-width: 650px){
+         
+
+         
+        .navbar{
+            width: 90%;
+            margin: auto;
+            
+           
+        }
+         .second-section .second-row{
+            width: 85%;
+            margin: auto;
+            margin-top: 6rem;
+        }
+
+        .second-section .second-row img{
+            width: 100%;
+            height: 87vh;
+            margin: auto;
+            position: relative;
+            transition: 1s;
+        }
+
+        .second-section .third-row{
+            width: 85%;
+            margin: auto;
+            margin-bottom: 6rem;
+            position: relative;
+            
+        }
+        
+        .second-section .third-row img{
+            width: 100%;
+            
+        }
+        
+
+        .last-section-text{
+            width: 70%;
+            margin: auto;
+            text-align: center;
+            display: block;
+            
+        }
+
+        .last-section .first-form-section{
+            width: 70%;
+            margin: auto;
+        }
+        
+        .last-section .first-form-section .my-input{ 
+           margin: auto;
+           width: 100%;
+          
+        }
+
+         
+        .last-section  .big-message-box{
+            margin-left: 3%;
+            width: 70%;
+            margin: auto;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .last-section  button{
+            padding: 10px 3%;
+            margin-left: 57%;
+            margin-bottom: 7rem;
+        }
+
+        .main-footer .footer-container{
+           width: 90%;
+           height: 7rem;
+           justify-content: center;
+           align-items: center;
+           padding-top: 10px;
+       }
+
+       .first-footer-item{
+           width: 80%;
+       }
+
+       .second-footer-item {
+          width: 80%;
+          color: #aaa;
+          justify-content: flex-start;
+          
+       }
+
+       .second-footer-item i{
+           padding-right: 10px;
+       }
+
+       .footer-icons{
+           padding: 10px 15px;
+           background: #eee;
+           margin: 2px;  
+       }
+
+       .after-section-container{
+            width: 55%;
+            margin: auto;
+            padding-top: 7rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            
+        }
+
+        .after-section-text{
+            padding-left: 10px;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+
+        .after-section-text b{
+            display: block;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .after-section-paragraph{
+            width: 60%;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            line-height: 23px;
+            
+        }
+
+        .after-section .after-icons {
+            position: relative;
+            z-index: 2;
+            width: 45%;
+            padding: 40px 30px;
+            margin: auto;
+            margin-top: 40px;
+            justify-content: space-between;
+            color: #fff;
+        }
+         
+
+        .after-section .after-icons .main-icon{
+           padding: 8px 12px;
+           border: 1px solid #fff;
+           margin-top: -40px;
+        }
+
+
+        .after-section .after-icons .main-icon:hover{
+           color: black;
+           background: #fff;
+           cursor: pointer;
+           transition:  1s;
+        }
+        
+         }
+
+        
+
+        /* END OF SCREEN SIZE OF 650 AND BELOW*/
+
+         /*SCREEN SIZE OF 768 AND ABOVE*/
+        @media(min-width: 768px){
+           
+         .second-section .first-row{
+            width: 100%;
+            padding-top: 7rem;
+            color: rgb(160, 157, 157);
+            margin: auto;
+
+        }
+
+        .second-section .first-row .first-item{
+            width: 70%;
+            margin: auto;
+            font-size: 2rem;
+            text-align: center;
+            opacity: 0.7;
+            line-height: 35px;
+        }
+
+        
+
+        .second-section .first-row .second-item{
+            width: 90%;
+            margin: auto;
+            line-height: 1.4rem;
+            text-align: center;
+        }
+
+
+        .second-section .first-row .second-item{
+            
+            margin: auto;
+            line-height: 1.4rem;
+            text-align: left;
+        }
+
+        .second-section .second-row{
+            width: 95%;
+            margin: auto;
+            margin-top: 6rem;
+        }
+
+        .second-section .second-row img{
+            width: 100%;
+            height: 35vh;
+            margin: auto;
+            position: relative;
+            transition: 1s;
+        }
+
+        .second-section .third-row{
+            width: 95%;
+            margin: auto;
+            margin-bottom: 6rem;
+            position: relative;
+            
+        }
+        
+        .second-section .third-row img{
+            width: 90vw;
+            height: 60vh;
+        }
+
+        .second-about-item{
+            width: 95%;
+            margin: auto;
+            text-align: center;
+            padding-left: 20px;
+            font-size: 13px;
+            color: grey;
+            padding-bottom: 0rem;
+
+        }
+
+
+        .last-section .first-form-section{
+            width: 80%;
+            margin: auto;
+        }
+        
+        .last-section .first-form-section .my-input{ 
+           margin: auto;
+           width: 100%;
+          
+        }
+
+         
+        .last-section  .big-message-box{
+            margin-left: 3%;
+            width: 80%;
+            margin: auto;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .last-section  button{
+            padding: 10px 3%;
+            margin-left: 65%;
+            margin-bottom: 7rem;
+        }
+
+       
+
+        .main-footer .footer-container{
+           width: 90%;
+           height: 7rem;
+           justify-content: center;
+           align-items: center;
+           padding-top: 10px;
+       }
+
+       .first-footer-item{
+          width: 85%; 
+       }
+
+       .second-footer-item {
+          width: 90%;
+          color: #aaa;
+          justify-content: flex-start;
+          
+       }
+
+       .second-footer-item i{
+           padding-right: 10px;
+       }
+
+       .footer-icons{
+           padding: 10px 15px;
+           background: #eee;
+           margin: 2px;  
+       }
+
+        }
+         
+
+         /* END OF SCREEN SIZE OF 768 AND ABOVE*/
+
+        
+         /*SCREEN SIZE OF 850 AND ABOVE*/
+         @media(min-width: 850px){
+            
+         .second-section .first-row{
+            width: 100%;
+            padding-top: 7rem;
+            color: rgb(160, 157, 157);
+            margin: auto;
+
+        }
+
+        .second-section .first-row .first-item{
+            width: 57%;
+            margin: auto;
+            font-size: 2rem;
+            text-align: center;
+            opacity: 0.7;
+            line-height: 35px;
+        }
+
+        
+
+        .second-section .first-row .second-item{
+            width: 80%;
+            margin: auto;
+            line-height: 1.4rem;
+            text-align: center;
+        }
+
+        .second-section .second-row{
+            width: 85%;
+            margin: auto;
+            margin-top: 6rem;
+        }
+
+        .second-section .second-row img{
+            width: 100%;
+            height: 35vh;
+            margin: auto;
+            position: relative;
+            transition: 1s;
+        }
+
+        .second-section .third-row{
+            width: 85%;
+            margin: auto;
+            margin-bottom: 6rem;
+            position: relative;
+            
+        }
+        
+        .second-section .third-row img{
+            width: 100%;
+            height: 60vh;
+        }
+
+
+        
+        .after-section-container{
+            width: 45%;
+            margin: auto;
+            padding-top: 7rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            
+        }
+        
+        .last-section{
+            width: 100%;
+            margin: auto;
+            
+        }
+
+        .last-section .first-form-section{
+            width: 70%;
+            margin: auto;
+           
+        }
+        
+        .last-section .first-form-section .my-input{ 
+           margin: auto;
+           width: 100%;
+          
+        }
+
+         
+        .last-section  .big-message-box{
+            margin-left: 3%;
+            width: 70%;
+            margin: auto;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .last-section  button{
+            padding: 10px 3%;
+            margin-left: 62%;
+            margin-bottom: 7rem;
+        }
+
+        
+        .navbar{
+            width: 80%;
+            margin: auto;
+            
+           
+        }
+
+        
+         }
+
+
+         /* END OF SCREEN SIZE OF 850 AND ABOVE*/
+
+        /*SCREEN SIZE OF 992 AND ABOVE*/
+        @media(min-width: 992px){
+
+            .second-section .first-row{
+            
+            padding-top: 7rem;
+            color: rgb(160, 157, 157);
+            margin: auto;
+
+        }
+
+        .second-section .first-row .first-item{
+            
+            margin: auto;
+            font-size: 2rem;
+            text-align: right;
+            opacity: 0.7;
+            line-height: 35px;
+        }
+        
+
+        .second-section .second-row{
+            width: 98%;
+            margin: auto;
+            margin-top: 6rem;
+        }
+
+        .second-section .second-row img{
+            width: 100%;
+            height: 45vh;
+            margin: auto;
+            position: relative;
+            transition: 1s;
+        }
+        
+        .second-section .third-row{
+            width: 98%;
+            margin: auto;
+            margin-bottom: 6rem;
+            position: relative;
+            
+        }
+        
+        .second-section .third-row img{
+            width: 100%;
+            height: 40vh;
+        }
+
+
+        .after-section-container{
+            width: 45%;
+            margin: auto;
+            padding-top: 7rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            
+        }
+
+        .after-section-text{
+            padding-left: 10px;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+
+        .after-section-text b{
+            display: block;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .after-section-paragraph{
+            width: 60%;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            line-height: 23px;
+            
+        }
+
+        .after-section .after-icons {
+            position: relative;
+            z-index: 2;
+            width: 45%;
+            padding: 40px 30px;
+            margin: auto;
+            margin-top: 40px;
+            justify-content: space-between;
+            color: #fff;
+        }
+         
+
+        .after-section .after-icons .main-icon{
+           padding: 8px 12px;
+           border: 1px solid #fff;
+           margin-top: -40px;
+           
+        }
+
+        .after-section .after-icons .main-icon .first-main{
+            position: absolute;
+        }
+
+
+        .after-section .after-icons .main-icon .second-main{
+           
+        }
+
+
+        .after-section .after-icons .main-icon:hover{
+           color: black;
+           background: #fff;
+           cursor: pointer;
+           transition:  1s;
+        }
+        
+
+    
+
+         .about-section .about-background{
+            height: 50vh;
+           background: url(./img/Music_files/about-img.png) center/cover no-repeat ;
+           width: 100%;
+            
+        }
+
+        
+
+        .about-section-items{
+            width: 55vh;
+            width: 100%;
+            padding-top: 1.5rem;
+            
+            margin: auto;
+            
+        }
+
+        .first-about-item{
+            width: 70%;
+            text-align: left;
+            font-size: 1.5rem;
+            padding-left: 0px;
+            margin-left: 1rem;
+            padding-bottom: 10px;
+            line-height: 35px;
+            background: linear-gradient(-45deg, #f3377f, #22A);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .second-about-item{
+            width: 70%;
+            font-size: 13px;
+            text-align: left;
+            color: grey;
+            padding-left: 0px;
+            margin-left: 1rem;
+           
+        }
+
+
+        .last-section{
+            width: 100%;
+            margin: auto;
+            
+        }
+
+        .last-section-inner{
+            width: 95%;
+            margin: auto;
+        }
+
+
+        .last-section-text{
+            width: 100%;
+            display: block;
+            
+            
+        }
+
+        .last-section-text p{
+            padding-top: 20px;
+            color: grey;
+            opacity: 0.7;
+           width: 92%;
+        }
+
+        .last-section-container b{
+            
+            margin-left: 3rem;
+            font-size: 35px;
+            margin: auto;
+            text-align: center;
+            line-height: 35px;
+            text-transform: uppercase;
+            
+        }
+
+        .main-text{
+            margin-top: -190px;
+            text-align: left;
+        }
+
+
+        .last-section .first-form-section{
+            width: 100%;
+            margin: auto;
+            margin-top: 7rem;
+           
+        }
+        
+        .last-section .first-form-section .my-input{ 
+           margin: auto;
+           width: 100%;
+          
+        }
+
+         
+        .last-section  .big-message-box{
+            margin-left: 3%;
+            width: 100%;
+            margin: auto;
+            margin-top: 7rem;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            
+        }
+
+        .last-section  button{
+            padding: 10px 6%;
+            margin-left: 40%;
+            margin-bottom: 7rem;
+        }
+
+        
+
+        .main-footer .footer-container{
+           width: 100%;
+           margin: auto;
+           grid-gap: 7rem;
+           height: 7rem;
+           justify-content: center;
+           align-items: center;
+           padding-top: 10px;
+       }
+
+       .first-footer-item{
+          width: 30%;
+          padding-top: 20px;
+       }
+
+       .second-footer-item {
+          
+          color: #aaa;
+          justify-content: flex-end;
+          
+       }
+
+       
+        
+
+        }
+        /* END OF SCREEN SIZE OF 992 AND BELOW*/
+
+
+         /*SCREEN SIZE OF 1100 AND ABOVE*/
+         @media(min-width: 1100px){
+
+         .second-section .first-row{
+            
+            padding-top: 7rem;
+            color: rgb(160, 157, 157);
+            margin: auto;
+
+        }
+
+        .second-section .first-row .first-item{
+            padding-left: 5%;
+            margin: auto;
+            font-size: 2rem;
+            text-align: right;
+            opacity: 0.7;
+            line-height: 35px;
+        }
+
+        
+
+        .second-section .first-row .second-item{
+            padding-right: 4%;
+            margin: auto;
+            line-height: 1.4rem;
+            text-align: left;
+        }
+        
+        .second-section .second-row{
+            width: 90%;
+            margin: auto;
+            margin-top: 6rem;
+        }
+
+        .second-section .second-row img{
+            width: 100%;
+            height: 45vh;
+            margin: auto;
+            position: relative;
+            transition: 1s;
+        }
+        
+        .second-section .third-row{
+            width: 90%;
+            margin: auto;
+            margin-bottom: 6rem;
+            position: relative;
+            
+        }
+        
+        .second-section .third-row img{
+            width: 100%;
+            height: 40vh;
+        }
+
+
+        .after-section-container{
+            width: 40%;
+            margin: auto;
+            padding-top: 7rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            
+        }
+
+        .after-section-text{
+            padding-left: 10px;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+
+        .after-section-text b{
+            display: block;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .after-section-paragraph{
+            width: 55%;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            line-height: 23px;
+            
+        }
+
+        .after-section .after-icons {
+            position: relative;
+            z-index: 2;
+            width: 40%;
+            padding: 40px 30px;
+            margin: auto;
+            margin-top: 40px;
+            justify-content: space-between;
+            color: #fff;
+        }
+         
+
+
+        
+
+
+        
+
+        .last-section{
+            width: 100%;
+            margin: auto;
+            
+        }
+
+        .last-section-inner{
+            width: 85%;
+            margin: auto;
+        }
+
+
+        .last-section-text{
+            width: 100%;
+            display: block;
+            
+            
+        }
+
+        .last-section-text p{
+            padding-top: 20px;
+            color: grey;
+            opacity: 0.7;
+           width: 95%;
+        }
+
+        .last-section-container b{
+            
+            margin-left: 3rem;
+            font-size: 35px;
+            margin: auto;
+            text-align: center;
+            line-height: 35px;
+            text-transform: uppercase;
+            
+        }
+
+        .main-text{
+            margin-top: -190px;
+            text-align: left;
+        }
+
+
+        .last-section .first-form-section{
+            width: 100%;
+            margin: auto;
+            margin-top: 7rem;
+           
+        }
+        
+        .last-section .first-form-section .my-input{ 
+           margin: auto;
+           width: 100%;
+          
+        }
+
+         
+        .last-section  .big-message-box{
+            margin-left: 3%;
+            width: 100%;
+            margin: auto;
+            margin-top: 7rem;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            
+        }
+
+        .last-section  button{
+            padding: 10px 6%;
+            margin-left: 40%;
+            margin-bottom: 7rem;
+        }
+
+
+        .main-footer .footer-container{
+           width: 90%;
+           margin: auto;
+           height: 7rem;
+           justify-content: center;
+           align-items: center;
+           padding-top: 10px;
+       }
+
+       .first-footer-item{
+          width: 30%;
+       }
+
+       .second-footer-item {
+          
+          color: #aaa;
+          justify-content: flex-end;
+          
+       }
+
+         }
+         
+
+         /* END OF SCREEN SIZE OF 1100 AND BELOW*/
+
+
+         /*SCREEN SIZE OF 1200 AND ABOVE*/
+         @media(min-width: 1200px){
+            
+            
+        .second-section .first-row{
+            
+            padding-top: 7rem;
+            color: rgb(160, 157, 157);
+            margin: auto;
+
+        }
+
+        .second-section .first-row .first-item{
+            padding-left: 10%;
+            margin: auto;
+            font-size: 2rem;
+            text-align: right;
+            opacity: 0.7;
+            line-height: 35px;
+        }
+
+        
+
+        .second-section .first-row .second-item{
+           padding-right: 9%;
+            margin: auto;
+            line-height: 1.4rem;
+            text-align: left;
+        }
+
+
+        .second-section .second-row{
+            width: 98%;
+            margin: auto;
+            margin-top: 6rem;
+        }
+
+        .second-section .second-row img{
+            width: 100%;
+            height: 55vh;
+            margin: auto;
+            position: relative;
+            transition: 1s;
+        }
+        
+        .second-section .third-row{
+            width: 98%;
+            margin: auto;
+            margin-bottom: 6rem;
+            position: relative;
+            
+        }
+        
+        .second-section .third-row img{
+            width: 100%;
+            height: 45vh;
+        }
+        
+
+        .after-section-container{
+            width: 35%;
+            margin: auto;
+            padding-top: 7rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            
+        }
+
+        .after-section-text{
+            padding-left: 10px;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+
+        .after-section-text b{
+            display: block;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .after-section-paragraph{
+            width: 50%;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            line-height: 23px;
+            
+        }
+
+        .after-section .after-icons {
+            position: relative;
+            z-index: 2;
+            width: 35%;
+            padding: 40px 30px;
+            margin: auto;
+            margin-top: 40px;
+            justify-content: space-between;
+            color: #fff;
+        }
+         
+
+            .about-section .about-background{
+                height: 60vh;
+               background: url(./img/Music_files/about-img.png) center/cover no-repeat ;
+               width: 100%;
+                
+            }
+    
+            
+    
+            .about-section-items{
+                width: 100%;
+                padding-top: 3rem;
+                margin: auto;
+                
+            }
+    
+            .first-about-item{
+                width: 65%;
+                text-align: left;
+                font-size: 2rem;
+                padding-left: 0px;
+                margin-left: 1rem;
+                padding-bottom: 10px;
+                line-height: 35px;
+               
+            }
+    
+            .second-about-item{
+                width: 65%;
+                font-size: 15px;
+                text-align: left;
+                padding-left: 0px;
+                margin-left: 1rem;
+               
+            }
+
+
+         .last-section{
+            width: 100%;
+            margin: auto;
+            
+        }
+
+        .last-section-inner{
+            width: 95%;
+            margin: auto;
+        }
+
+
+        .last-section-text{
+            width: 100%;
+            display: block;
+            
+            
+        }
+
+        .last-section-text p{
+            padding-top: 20px;
+            color: grey;
+            opacity: 0.7;
+            width: 75%;
+        }
+
+        .last-section-container b{
+            
+            margin-left: 3rem;
+            font-size: 35px;
+            margin: auto;
+            text-align: center;
+            line-height: 35px;
+            text-transform: uppercase;
+            
+        }
+
+        .main-text{
+            margin-top: -190px;
+            text-align: left;
+        }
+
+
+        .last-section .first-form-section{
+            width: 100%;
+            margin: auto;
+            margin-top: 7rem;
+           
+        }
+        
+        .last-section .first-form-section .my-input{ 
+           margin: auto;
+           width: 100%;
+          
+        }
+
+         
+        .last-section  .big-message-box{
+            margin-left: 3%;
+            width: 100%;
+            margin: auto;
+            margin-top: 7rem;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            
+        }
+
+        .last-section  button{
+            padding: 10px 6%;
+            margin-left: 50%;
+            margin-bottom: 7rem;
+        }
+
+            
+        .main-footer .footer-container{
+           width: 100%;
+           margin: auto;
+           height: 7rem;
+           justify-content: center;
+           align-items: center;
+           padding-top: 10px;
+       }
+
+       .first-footer-item{
+          width: 30%;
+       }
+
+       .second-footer-item {
+          
+          color: #aaa;
+          justify-content: flex-end;
+          
+       }
+
+            }
+             /* END OF SCREEN SIZE OF 1200 AND ABOVE*/
+
+            /*SCREEN SIZE OF 1300 AND ABOVE*/
+         @media(min-width: 1300px){
+            
+               
+        .second-section .first-row{
+            
+            padding-top: 7rem;
+            color: rgb(160, 157, 157);
+            margin: auto;
+
+        }
+
+        .second-section .first-row .first-item{
+            padding-left: 13%;
+            margin: auto;
+            font-size: 2rem;
+            text-align: right;
+            opacity: 0.7;
+            line-height: 35px;
+        }
+
+        
+
+        .second-section .first-row .second-item{
+           padding-right: 14%;
+            margin: auto;
+            line-height: 1.4rem;
+            text-align: left;
+        }
+        
+
+        .second-section .second-row{
+            width: 90%;
+            margin: auto;
+            margin-top: 6rem;
+        }
+
+        .second-section .second-row img{
+            width: 100%;
+            height: 55vh;
+            margin: auto;
+            position: relative;
+            transition: 1s;
+        }
+        
+        .second-section .third-row{
+            width: 90%;
+            margin: auto;
+            margin-bottom: 6rem;
+            position: relative;
+            
+        }
+        
+        .second-section .third-row img{
+            width: 100%;
+            height: 45vh;
+        }
+
+        
+        .after-section .after-icons {
+            position: relative;
+            z-index: 2;
+            width: 30%;
+            padding: 40px 30px;
+            margin: auto;
+            margin-top: 40px;
+            justify-content: space-between;
+            color: #fff;
+        }
+            .about-section .about-background{
+                height: 65vh;
+               background: url(./img/Music_files/about-img.png) center/cover no-repeat ;
+               width: 100%;
+                
+            }
+    
+            
+    
+            .about-section-items{
+                width: 100%;
+                padding-top: 4rem;
+                margin: auto;
+                
+            }
+    
+            .first-about-item{
+                width: 60%;
+                font-size: 2rem;
+                text-align: left;
+                padding-left: 0px;
+                margin-left: 1rem;
+                padding-bottom: 10px;
+                line-height: 35px;
+               
+            }
+    
+            .second-about-item{
+                width: 65%;
+                font-size: 15px;
+                text-align: left;
+                padding-left: 0px;
+                margin-left: 1rem;
+               
+    
+            }
+
+          .last-section{
+            width: 100%;
+            margin: auto;
+            
+        }
+
+        .last-section-inner{
+            width: 85%;
+            margin: auto;
+        }
+
+
+        .last-section-text{
+            width: 100%;
+            display: block;
+            
+            
+        }
+
+        .last-section-text p{
+            padding-top: 20px;
+            color: grey;
+            opacity: 0.7;
+           width: 80%;
+        }
+
+        .last-section-container b{
+            
+            margin-left: 3rem;
+            font-size: 35px;
+            margin: auto;
+            text-align: center;
+            line-height: 35px;
+            text-transform: uppercase;
+            
+        }
+
+        .main-text{
+            margin-top: -190px;
+            text-align: left;
+        }
+
+
+        .last-section .first-form-section{
+            width: 100%;
+            margin: auto;
+            margin-top: 7rem;
+           
+        }
+        
+        .last-section .first-form-section .my-input{ 
+           margin: auto;
+           width: 100%;
+          
+        }
+
+         
+        .last-section  .big-message-box{
+            margin-left: 3%;
+            width: 100%;
+            margin: auto;
+            margin-top: 7rem;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            
+        }
+
+        .last-section  button{
+            padding: 10px 6%;
+            margin-left: 45%;
+            margin-bottom: 7rem;
+        }
+
+         .main-footer .footer-container{
+           width: 90%;
+           margin: auto;
+           height: 7rem;
+           justify-content: center;
+           align-items: center;
+           padding-top: 10px;
+       }
+
+       .first-footer-item{
+          width: 30%;
+       }
+
+       .second-footer-item {
+          
+          color: #aaa;
+          justify-content: flex-end;
+          
+       }
+         }
+
+            /* END OF SCREEN SIZE OF 1300 AND ABOVE*/
+
+         /*SCREEN SIZE OF 1400 AND ABOVE*/
+          @media(min-width: 1400px){
+           
+         .second-section .first-row{
+            
+            padding-top: 7rem;
+            color: rgb(160, 157, 157);
+            margin: auto;
+
+        }
+
+        .second-section .first-row .first-item{
+            padding-left: 15%;
+            margin: auto;
+            font-size: 2rem;
+            text-align: right;
+            opacity: 0.7;
+            line-height: 35px;
+        }
+
+        
+
+        .second-section .first-row .second-item{
+           padding-right: 15%;
+            margin: auto;
+            line-height: 1.4rem;
+            text-align: left;
+        }
+
+
+        .second-section .second-row{
+            width: 80%;
+            margin: auto;
+            margin-top: 6rem;
+        }
+
+        .second-section .second-row img{
+            width: 100%;
+            height: 55vh;
+            margin: auto;
+           
+        }
+        
+        .second-section .third-row{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 6rem;
+            position: relative;
+            
+        }
+        
+        .second-section .third-row img{
+            width: 100%;
+            height: 45vh;
+        }
+        
+        .after-section-container{
+            width: 30%;
+            margin: auto;
+            padding-top: 7rem;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 2;
+            
+        }
+
+        .after-section-text{
+            padding-left: 10px;
+            color: #fff;
+            position: relative;
+            z-index: 2;
+        }
+
+        .after-section-text b{
+            display: block;
+            text-transform: uppercase;
+            font-size: 18px;
+            letter-spacing: 2px;
+        }
+
+        .after-section-paragraph{
+            width: 45%;
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            line-height: 23px;
+            
+        }
+
+        .after-section .after-icons {
+            position: relative;
+            z-index: 2;
+            width: 30%;
+            padding: 40px 30px;
+            margin: auto;
+            margin-top: 40px;
+            justify-content: space-between;
+            color: #fff;
+        }
+
+        
+        .last-section{
+            width: 100%;
+            margin: auto;
+            
+        }
+
+        .last-section-inner{
+            width: 75%;
+            margin: auto;
+        }
+
+
+        .last-section-text{
+            width: 100%;
+            display: block;
+            
+            
+        }
+
+        .last-section-text p{
+            padding-top: 20px;
+            color: grey;
+            opacity: 0.7;
+            width: 82%;
+        }
+
+        .last-section-container b{
+            
+            margin-left: 5rem;
+            font-size: 35px;
+            margin: auto;
+            text-align: center;
+            line-height: 35px;
+            text-transform: uppercase;
+            
+        }
+
+        .main-text{
+            margin-top: -190px;
+            text-align: left;
+           
+        }
+
+
+        .last-section .first-form-section{
+            width: 100%;
+            margin: auto;
+            margin-top: 7rem;
+           
+        }
+        
+        .last-section .first-form-section .my-input{ 
+           margin: auto;
+           width: 100%;
+          
+        }
+
+         
+        .last-section  .big-message-box{
+            margin-left: 3%;
+            width: 100%;
+            margin: auto;
+            margin-top: 7rem;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            
+        }
+
+        .last-section  button{
+            padding: 10px 6%;
+            margin-left:46%;
+            margin-bottom: 7rem;
+        }
+
+        .main-footer .footer-container{
+           width: 80%;
+           margin: auto;
+           height: 7rem;
+           justify-content: center;
+           align-items: center;
+           padding-top: 10px;
+       }
+
+       .first-footer-item{
+          width: 30%;
+       }
+
+       .second-footer-item {
+          
+          color: #aaa;
+          justify-content: flex-end;
+          
+       }
+
+          }
+
+
+          /* END OF SCREEN SIZE OF 1400 AND ABOVE*/
+
+          /*SCREEN SIZE OF 768 AND BELOW*/
+          @media(max-width: 768px){
+            .services-section .services-container{
+            width: 90%;
+            margin-left: 4rem;
+            padding-top: 7rem;
+            
+        }
+          }
+          /*END OF SCREEN SIZE OF 768 AND BELOW*/
+        
+
+
+         /*SCREEN SIZE OF 600 AND BELOW*/
+         @media(max-width: 600px){
+            .services-section .services-container{
+            width: 100%;
+            margin-left: 1rem;
+            padding-top: 7rem;
+            
+        }
+          }
+          /*END OF SCREEN SIZE OF 600 AND BELOW*/
+
+    </Style>
+    
+</head>
+
+<body>
+    <header class="container-fluid  navbar-dark">
+        <div class="navbar">
+         <div>
+        <img class="navbar-brand" src="./img/Music_files/logo.png" alt="logo">
+       </div>
+
+       
+       <button class="navbar-toggler " type="button"
+        data-toggle="collapse" data-target="#navbarLinks">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse " id="navbarLinks">
+            <ul class="navbar-nav  ">
+                <li class="nav-item active">
+                    <a href="#" class="nav-link">HOME</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">FEATURE</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">ABOUT</a>
+                </li>
+
+                <li class="nav-item">
+                    <a href="#" class="nav-link">CONTACT</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    </header>
+
+    <section class="container-fluid first-section">
+        <div class="first-inner-section">
+        <div class="section-items">
+        <h1 class="text-uppercase display-5 text-light">music is life</h1>
+        <p class="text-uppercase bold text-light">univeral truth</p>
+        </div>
+    </div>
+    </section>
+
+    <section class="container-fluid second-section">
+        <div class="all-second">
+        <div class="row first-row">
+            <div class=" col-lg-6  first-item">
+                <p><b>Music</b> gives soul to the universe , 
+                    wings to the <b>mind</b> and 
+                    flight to <b>imagination</b></p>
+            </div>
+             <div class=" col-lg-6 second-item">
+               <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                   Libero rerum optio ipsa possimus dignissimos nemo error,
+                   porro nobis cupiditate earum, ratione veritatis sit ullam illo
+                   blanditiis accusantium quaerat voluptate? Ullam vitae tenetur non.
+                   Eum repudiandae quaerat vitae enim qui temporibus?
+
+                </p>
+            </div>
+        </div>
+
+        <div class="row second-row no-gutters ">
+            <div class=" col-md-4 hover-back" >
+                <img  src="./img/Music_files/f1.jpg"  alt="">
+                <div class="second-row-text">
+                <b class="s-row-text">concert toronto</b>
+                <p class="ss-row-text">Need concert details</p>
+                </div>
+
+            </div>
+           <div class=" col-md-4  hover-back">
+                <img  src="./img/Music_files/f2.jpg"  alt="">
+                <div class="second-row-text">
+                    <b class="s-row-text">concert toronto</b>
+                    <p class="ss-row-text">Need concert details</p>
+                    </div>
+            </div>
+             <div  class="col-md-4  hover-back">
+                <img  src="./img/Music_files/f3.jpg"  alt="">
+                <div class="second-row-text">
+                    <b class="s-row-text">concert toronto</b>
+                    <p class="ss-row-text">Need concert details</p>
+                    </div>
+            </div>
+
+        </div>
+
+        <div class="row third-row no-gutters">
+            
+            <div class=" col-lg-6 third-row-items">
+                <img class="fisrt-image" src="./img/Music_files/f4.jpg" alt="">
+                <div class="third-row-inner">
+                <img src="./img/Music_files/video-btn.png" alt="">
+                <div class="third-row-inner-text">
+                    <b class="t-row-text">Being unique is the preference</b>
+                    <p class="tt-row-text">Youtube video will appear in pop over</p>
+                </div>
+               </div>
+            </div>
+
+        
+            <div class=" col-lg-6 third-row-items">
+                <img class="fisrt-image" src="./img/Music_files/f5.jpg"  alt="">
+                <div class="third-row-inner">
+                    <img src="./img/Music_files/video-btn.png" alt="">
+                    <div class="third-row-inner-text">
+                        <b class="t-row-text">Being unique is the preference</b>
+                        <p class="tt-row-text">Youtube video will appear in pop over</p>
+                    </div>
+                   </div>
+            </div>
+             
+        </div>
+         
+        
+         
+            </div>
+
+    </section>
+
+    <section class="services-section">
+        <div class="services-container">
+        <div class="services-items d-flex spacing">
+          <div class="col-2 col-md-2"> 
+         <img  src="./img/Music_files/s1.png" alt="">
+        </div> 
+
+        <div class="col-10 col-md-10">
+         <p>
+             <b>dj party on the house</b>
+             Usage of the internet is becoming more common due to rapid
+             advancement of technology and the power of globalization
+         </p>
+        </div>
+        
+        </div>
+
+        <div class="services-items d-flex spacing">
+          <div  class="col-2"> 
+            <img src="./img/Music_files/s2.png" alt="">
+          </div>
+            
+          <div class="col-10">
+            <p>
+                <b>concert at it's best</b>
+                Usage of the internet is becoming more common due to rapid
+                advancement of technology and the power of globalization
+            </p>
+          </div>
+           </div>
+
+           <div class="services-items d-flex spacing">
+            <div  class="col-2">
+                    <img src="./img/Music_files/s3.png" alt="">
+            </div>
+
+            <div class="col-10">
+                <p class="services-text">
+                    <b>playing music videos</b>
+                    Usage of the internet is becoming more common due to rapid
+                    advancement of technology and the power of globalization
+                </p>
+            </div>
+           </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="after-section">
+      
+             <div class=" row after-section-container d-flex ">
+                    <div class="col-4">
+                            <img src="./img/Music_files/m1.jpg" alt="">
+                        </div>
+
+                        
+                        <div class="after-section-text col-8" >
+                            <p><b>Fredric Elsa</b> Lead Vocalist</p>
+                            <p>Date of Birth: 31st Dec 1989</p>
+                        </div>
+                        
+                    </div>
+
+                    <div class="after-section-paragraph text-light mx-auto">
+                        <p>The usage of internet is becoming more common due to the rapid 
+                            advancement in technology and the power of globalization. 
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Dolorum, labore. Ducimus nam placeat ut quibusdam porro, rerum 
+                            deserunt sed.Laudantium mollitia voluptas nobis iusto 
+                            alias debitis soluta corrupti voluptatum praesentium?
+                            Exploring and implementing technology will go a long way to 
+                            give this generation.
+                        </p>
+                    </div>
+
+                    <div class=" row after-icons d-flex ">
+                        <p class="main-icon first-main"><i class="fas  fa-arrow-left 3x my-first-icon "></i></p>
+                        <p class=" main-icon second-main"><i class="fas  fa-arrow-right 3x my-icon"></i></p>
+                    </div>
+                
+
+                
+            
+
+     
+   
+    </section>
+
+
+    <section class=" about-section ">
+            
+        <div class="row about-inner-section ">
+           <div class=" col-lg-6   about-background ">
+  
+           </div>
+            <div class="col-lg-6  row about-next ">
+           <div class="about-section-items">
+               <div class="col first-about-item">
+                <p><b>Music</b> gives soul to the universe , 
+                    wings to the <b>mind</b> and 
+                    flight to <b>imagination</b></p>
+               </div>
+
+               
+               <div class="  second-about-item ">
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Libero rerum optio ipsa possimus dignissimos nemo error,
+                    porro nobis cupiditate earum, ratione veritatis sit ullam illo
+                    blanditiis accusantium quaerat voluptate? Ullam vitae tenetur non.
+                    Eum repudiandae quaerat vitae enim qui temporibus?
+                    porro nobis cupiditate earum,ratione veritatis sit ullam illo
+ 
+                 </p>
+             </div>
+           </div> 
+        </div>
+    </div>
+    </section>
+
+    <section class="last-section ">
+        <div class=" row last-section-inner">
+         <div class=" col-lg-4 last-section-container ">
+             <div class="  mt-3 mx-auto last-section-text">
+                 <div class="main-text">
+                 <b>send <br > us <br> message</b>
+                </div>
+                 <p>we won't send you any kind of spam</p>
+             </div>
+
+            </div> 
+             
+           
+                
+                  <div class="col-lg-4 ">
+                     <div class="  first-form-section">
+                     <div class="">
+                     <div class="form-group mt-3">
+                     <input type="text" class=" my-input" placeholder="Enter your name">
+                    </div>
+
+                    <div class="form-group mt-2">
+                        <input type="email" class="  my-input" placeholder="Enter email address">
+                       </div>
+
+                       <div class="form-group mt-2">
+                        <input type="tel" class="  my-input" placeholder="Enter phone number">
+                       </div>  
+                    </div>
+                </div>
+            </div>
+                   
+                <div class="col-lg-4">
+                <div class=" mt-3 second-form-section">
+                    <div>
+                       <textarea class=" row big-message-box" placeholder="message"></textarea>
+                    </div>
+                    <button type="button" class="form-button">send a message <i class="fas 2x fa-arrow-right my-icon"></i></button>
+                </div>
+            </div>
+        
+      
+        </div>
+            
+        
+            
+
+    </section>
+
+    <footer class="main-footer">
+        <div class="row  footer-container ">
+            <div class="col-lg-6 first-footer-item">
+                <p>Copyright &copy;2020 all right reserved | This template is made with by colorlib </p>
+            </div>
+
+            <div class=" col-lg-4 second-footer-item d-flex">
+                <div class="footer-icons"><i class="fab fa-facebook"></i></div>
+                <div class="footer-icons"><i class="fab fa-twitter"></i></div>
+                <div class="footer-icons"><i class="fab fa-youtube"></i></div>
+                <div class="footer-icons"><i class="fab fa-instagram"></i></div>
+            </div>
+        </div>
+    </footer>
+    
+
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <!--bootstrap js-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
